@@ -1,0 +1,19 @@
+server:
+  port : 8000
+spring:
+  application:
+    name : beer_tap
+
+
+  datasource:
+    username: 'user'
+    url: jdbc:postgresql://localhost:5432/postgres_rv_database
+    password: 'admin'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL82Dialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'

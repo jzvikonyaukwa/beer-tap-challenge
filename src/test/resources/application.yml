@@ -1,0 +1,21 @@
+server:
+  port : 6060
+
+spring:
+  application:
+    name: beer_tap
+
+  datasource:
+    username: 'sa'
+    url: jdbc:h2://mem:db;DB_CLOSE_DELAY=-1
+    password: 'sa'
+    driver-class-name : org.h2.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL82Dialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: 'true'

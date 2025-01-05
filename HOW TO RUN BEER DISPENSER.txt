@@ -1,0 +1,21 @@
+/***** BEER DISPENSER *****/
+
+When a dispenser is created, it will hold dispenser Actions. 
+So dispenser actions will be a list in a dispenser.
+They will be a one to many relationship between dispenser and Dispenser actions.
+When we open a dispenser, the status change to open and and action open_at date is modified,
+the same is done when an action is closed, closed_at is modified.
+
+
+Used :Using OpenAPI 3.0 for Api Documentation.
+     :dependencies {implementation ‘org.springdoc:springdoc-openapi-ui:1.6.12’}
+     :http://localhost:8000/swagger-ui/index.html?#/
+
+
+
+How To Run The Api
+Start the Spring Boot application.
+USE the API documention to do some queries.
+The Path URL is provided above for doing queries (http://localhost:8000/swagger-ui/index.html?#/).
+
+/********* END ****************/
